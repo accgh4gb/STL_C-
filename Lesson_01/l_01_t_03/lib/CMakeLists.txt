@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.9)
+project(Lib)
+set(SOURCES PhoneBook.cpp)
+set(HEADERS Person.h PhoneNumber.h PhoneBook.h)
+add_library(lib Person.cpp PhoneNumber.cpp PhoneBook.cpp)
+target_include_directories(lib PUBLIC ./)
