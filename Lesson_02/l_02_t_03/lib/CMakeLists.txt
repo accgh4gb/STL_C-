@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.9)
+project(Lib)
+set(SOURCES l_02_t_03.cpp)
+set(HEADERS Timer.h CountVowels.h)
+add_library(lib CountVowels.cpp l_02_t_03.cpp)
+target_include_directories(lib PUBLIC ./)
