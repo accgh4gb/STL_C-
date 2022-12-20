@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.9)
+project(Lib)
+set(SOURCES l_03_t_02.cpp)
+set(HEADERS Matrix.h)
+add_library(lib Matrix.cpp l_03_t_02.cpp)
+target_include_directories(lib PUBLIC ./)
